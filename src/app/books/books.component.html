@@ -1,0 +1,20 @@
+<ul class="list-group">
+  <li class="list-group-item">
+    <h1>Books List</h1>
+  </li>
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col-md-10">
+        <input class="form-control" type="text" name="bookId" [(ngModel)]="bookName">
+      </div>
+      <div class="col-md-2">
+        <button class="btn btn-primary" type="button" name="button" (click)="AddNewBook()">Add</button>
+      </div>
+    </div>
+  </li>
+  <li class="list-group-item" *ngFor="let book of bookList;let i = index">
+    <span class="glyphicon glyphicon-remove" (click)="delBook(i)" style="cursor:pointer;"></span>
+    {{book}}
+    <button class="btn btn-sm btn-warning" type="button" name="button" [routerLink]="['/editBook',book]">Edit</button>
+  </li>
+</ul>

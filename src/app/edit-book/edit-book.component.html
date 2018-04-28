@@ -1,0 +1,32 @@
+<form (submit)="update()">
+  <table class="table">
+    <tr>
+      <td>
+        <h1>Edit Book</h1>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Title:
+      </td>
+      <td>
+        <input type="text" name="bookTitle" [(ngModel)]="title">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Author:
+      </td>
+      <td>
+        <input type="text" name="bookAuthor" [(ngModel)]="author">
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <button class="btn btn-danger" type="button" name="button">Reset</button>
+        <button class="btn btn-success" type="submit" name="button">Save</button>
+      </td>
+    </tr>
+  </table>
+</form>
