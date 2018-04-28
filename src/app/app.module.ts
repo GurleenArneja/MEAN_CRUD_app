@@ -15,7 +15,7 @@ const routes: Routes = [
   {
     path: 'books',
     component: BooksComponent
-  }
+  },
   {
     path: 'editBook/:book',
     component: EditBookComponent
